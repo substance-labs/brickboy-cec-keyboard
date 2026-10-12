@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "name": "libCEC",
+      "repository": "https://github.com/Pulse-Eight/libcec.git",
+      "commit": "62d077c414f415f29a0ea2886ff7c2f79af90f33",
+      "tree": "87080baec0a3af660f65e484f9b2c8e6aec4a925",
+      "git_archive_sha256": "3e3b87015a949e97af5c23b91680a2ebaf780123b6da174ec9a1c54f8fa11dbd",
+      "path": "libcec",
+      "license_file": "libcec/LICENSE.md"
+    },
+    {
+      "name": "p8-platform",
+      "repository": "https://github.com/Pulse-Eight/platform.git",
+      "commit": "2748be52ae27e6007ef548b697d4a03ff7de4291",
+      "tree": "70fe36d343c1ede2f59cda7a316ad17ef5021ebe",
+      "git_archive_sha256": "773563b5a5ddc1b04ae45700cf34082f3822c6fd3da749fdb413878c23a58b55",
+      "path": "p8-platform",
+      "license_file": "p8-platform/LICENSE.md"
+    },
+    {
+      "name": "Raspberry Pi userland development headers",
+      "repository": "https://github.com/raspberrypi/userland.git",
+      "commit": "3c97f769ef256575354638a851ccaa1930cbf5f6",
+      "tree": "63f0efab1f3136e433c57369a26efd15bbb2b56e",
+      "debian_package": "libraspberrypi-dev:arm64 1:2+git20231018~131943+3c97f76-1",
+      "debian_package_sha256": "a199967045ddaf84d834f86c38adc9a1131c812cb6d6dfc3444a46e6f0c31241",
+      "path": "raspberrypi-userland/include",
+      "license_file": "raspberrypi-userland/LICENCE"
+    }
+  ],
+  "runtime_inputs": [
+    {
+      "name": "libbcm_host.so.0",
+      "debian_package": "libraspberrypi0:arm64 1:2+git20231018~131943+3c97f76-1",
+      "repository_path": "brickboy-home-folder/brickboy/program/brickboy-cec-keyboard/lib/rpi/libbcm_host.so.0",
+      "sha256": "307a71ff13758bedd2be5e925ba59f5f0a66396108ba14f168e5a7c85ec19d9c"
+    },
+    {
+      "name": "libvchiq_arm.so.0",
+      "debian_package": "libraspberrypi0:arm64 1:2+git20231018~131943+3c97f76-1",
+      "repository_path": "brickboy-home-folder/brickboy/program/brickboy-cec-keyboard/lib/rpi/libvchiq_arm.so.0",
+      "sha256": "1bf14739553ff673c8b33535ed64cc10731eeb65af1c59c4f114b4493a52471e"
+    },
+    {
+      "name": "libvcos.so.0",
+      "debian_package": "libraspberrypi0:arm64 1:2+git20231018~131943+3c97f76-1",
+      "repository_path": "brickboy-home-folder/brickboy/program/brickboy-cec-keyboard/lib/rpi/libvcos.so.0",
+      "sha256": "3c51a363cc1cf42f8c4e7bbe22b90826bdb8d0dd6b36385b7f16a04cc89cb00f"
+    }
+  ]
+}
